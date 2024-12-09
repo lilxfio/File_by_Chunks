@@ -1,0 +1,15 @@
+C:\Users\toska\OneDrive\Desktop\File_Chunks\src\bin\Debug\net9.0\File_Chunks.exe
+C:\Users\toska\OneDrive\Desktop\File_Chunks\src\bin\Debug\net9.0\File_Chunks.deps.json
+C:\Users\toska\OneDrive\Desktop\File_Chunks\src\bin\Debug\net9.0\File_Chunks.runtimeconfig.json
+C:\Users\toska\OneDrive\Desktop\File_Chunks\src\bin\Debug\net9.0\File_Chunks.dll
+C:\Users\toska\OneDrive\Desktop\File_Chunks\src\bin\Debug\net9.0\File_Chunks.pdb
+C:\Users\toska\OneDrive\Desktop\File_Chunks\src\obj\Debug\net9.0\File_Chunks.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\toska\OneDrive\Desktop\File_Chunks\src\obj\Debug\net9.0\File_Chunks.AssemblyInfoInputs.cache
+C:\Users\toska\OneDrive\Desktop\File_Chunks\src\obj\Debug\net9.0\File_Chunks.AssemblyInfo.cs
+C:\Users\toska\OneDrive\Desktop\File_Chunks\src\obj\Debug\net9.0\File_Chunks.csproj.CoreCompileInputs.cache
+C:\Users\toska\OneDrive\Desktop\File_Chunks\src\obj\Debug\net9.0\File_Chunks.sourcelink.json
+C:\Users\toska\OneDrive\Desktop\File_Chunks\src\obj\Debug\net9.0\File_Chunks.dll
+C:\Users\toska\OneDrive\Desktop\File_Chunks\src\obj\Debug\net9.0\refint\File_Chunks.dll
+C:\Users\toska\OneDrive\Desktop\File_Chunks\src\obj\Debug\net9.0\File_Chunks.pdb
+C:\Users\toska\OneDrive\Desktop\File_Chunks\src\obj\Debug\net9.0\File_Chunks.genruntimeconfig.cache
+C:\Users\toska\OneDrive\Desktop\File_Chunks\src\obj\Debug\net9.0\ref\File_Chunks.dll
