@@ -27,16 +27,5 @@ jobs:
     - name: Build solution
       run: dotnet build src/File_Chunks.sln --no-restore --configuration Release
 
-    - name: Run tests and generate .trx
-      run: dotnet test test/File_Chunks.Tests --no-build --verbosity normal --logger "trx;LogFileName=test-results.trx"
-
-    - name: Locate .trx files
-      run: |
-        echo "Searching for .trx files..."
-        find . -name "*.trx" -print
-
-    - name: Upload test results
-      uses: actions/upload-artifact@v4
-      with:
-        name: test-results
-        path: "**/*.trx" # Dynamically match .trx files
+    - name: Run tests
+      run: dotnet test test/File_Chunks.Tests --no-build --verbosity normal
