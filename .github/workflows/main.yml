@@ -28,7 +28,7 @@ jobs:
       run: dotnet build src/File_Chunks.sln --no-restore --configuration Release
 
     - name: Run tests and generate .trx
-      run: dotnet test test\File_Chunks.Tests\bin\Debug\net9.0\File_Chunks.Tests.dll --no-build --verbosity normal --logger "trx;LogFileName=test-results.trx"
+      run: dotnet test test/File_Chunks.Tests/bin/Debug/net9.0/File_Chunks.Tests.dll --no-build --verbosity normal --logger "trx;LogFileName=test-results.trx"
 
     - name: Locate and upload test results
       run: |
