@@ -1,3 +1,5 @@
+name: .NET CI
+
 on:
   push:
     branches:
@@ -17,26 +19,24 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: '9.0.x'
+        dotnet-version: '9.0.x' # Adjust based on your .NET version
 
     - name: Restore dependencies
       run: dotnet restore src/File_Chunks.sln
 
     - name: Build solution
-      run: dotnet build src/File_Chunks.sln --no-restore --configuration Debug
+      run: dotnet build src/File_Chunks.sln --no-restore --configuration Release
 
-    - name: Run tests and generate .trx with detailed output
-      run: dotnet test src/File_Chunks.sln --no-build --verbosity detailed --logger "trx;LogFileName=test-results.trx" --logger "console"
+    - name: Run tests and generate .trx
+      run: dotnet test test/File_Chunks.Tests --no-build --verbosity normal --logger "trx;LogFileName=test-results.trx"
 
-    - name: Locate and upload test results
+    - name: Locate .trx files
       run: |
         echo "Searching for .trx files..."
         find . -name "*.trx" -print
-      continue-on-error: false
 
     - name: Upload test results
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: test-results
-        path: "**/*.trx"
-
+        path: "**/*.trx" # Dynamically match .trx files
