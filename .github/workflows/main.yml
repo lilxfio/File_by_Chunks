@@ -30,8 +30,15 @@ jobs:
     - name: Run tests and generate .trx
       run: dotnet test test/File_Chunks.Tests --no-build --verbosity normal --logger "trx;LogFileName=test-results.trx"
 
+    - name: Locate and upload test results
+      run: |
+        echo "Searching for .trx files..."
+        find . -name "*.trx" -print
+      continue-on-error: true
+
     - name: Upload test results
       uses: actions/upload-artifact@v3
       with:
         name: test-results
-        path: test/File_Chunks.Tests/TestResults/test-results.trx
+        path: "**/*.trx" # Dynamically match .trx files
+
