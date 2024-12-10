@@ -1,1 +1,81 @@
 
+<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="0d9f2d4a-d81a-4f3f-a936-0d8d0fc93228" name="@fv-az1316-419 2024-12-10 09:38:43" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2024-12-10T09:38:43.7131562+00:00" queuing="2024-12-10T09:38:43.7131563+00:00" start="2024-12-10T09:38:42.4814668+00:00" finish="2024-12-10T09:38:43.8124890+00:00" />
+  <TestSettings name="default" id="ebb38b5a-7ff9-420e-ac6a-ef6380a7cd33">
+    <Deployment runDeploymentRoot="_fv-az1316-419_2024-12-10_09_38_43" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="6fc978c3-d4b8-4240-b9d4-bb2dca5c05e3" testId="a2e0f43a-c5c2-46bf-782c-a16a1c8947ca" testName="Process_File_Should_Handle_Non_Existent_Source_File" computerName="fv-az1316-419" duration="00:00:00.0021077" startTime="2024-12-10T09:38:43.6071573+00:00" endTime="2024-12-10T09:38:43.6104552+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6fc978c3-d4b8-4240-b9d4-bb2dca5c05e3" />
+    <UnitTestResult executionId="476654c6-0898-47d2-90f1-f65c98c57384" testId="2cebd057-9b18-e54f-f7ef-6a2e098de61c" testName="Write_Chunks_Should_Write_Multiple_Chunks_Correctly" computerName="fv-az1316-419" duration="00:00:00.0127050" startTime="2024-12-10T09:38:43.3910433+00:00" endTime="2024-12-10T09:38:43.4295169+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="476654c6-0898-47d2-90f1-f65c98c57384" />
+    <UnitTestResult executionId="23f06ba6-683d-434b-9b2f-8c109b5fa619" testId="beae3098-b911-2057-80cf-b17ca7a296ef" testName="Write_Chunks_Should_Create_File_If_Not_Exist" computerName="fv-az1316-419" duration="00:00:00.0012504" startTime="2024-12-10T09:38:43.4453820+00:00" endTime="2024-12-10T09:38:43.4469015+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="23f06ba6-683d-434b-9b2f-8c109b5fa619" />
+    <UnitTestResult executionId="cf439ef1-4104-461c-9b60-6c28ce816953" testId="20647f18-0f09-76b3-5255-119971fae03c" testName="Read_Chunks_Should_Handle_End_Of_File_Correctly" computerName="fv-az1316-419" duration="00:00:00.0087812" startTime="2024-12-10T09:38:43.4688473+00:00" endTime="2024-12-10T09:38:43.4777254+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cf439ef1-4104-461c-9b60-6c28ce816953" />
+    <UnitTestResult executionId="1519cc03-258e-4837-9f80-6a1fd58ba3f1" testId="77d34c53-5989-3726-2bca-0fde86244c1c" testName="Read_Chunks_Should_Handle_Small_File" computerName="fv-az1316-419" duration="00:00:00.0158934" startTime="2024-12-10T09:38:43.4528393+00:00" endTime="2024-12-10T09:38:43.4688138+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1519cc03-258e-4837-9f80-6a1fd58ba3f1" />
+    <UnitTestResult executionId="3e88a1c6-d787-4b1f-bcf5-846cefb0846c" testId="8315166a-d8ca-8d64-1571-3f4b4f86854b" testName="Write_Chunks_Should_Handle_Empty_Chunks_Gracefully" computerName="fv-az1316-419" duration="00:00:00.0042981" startTime="2024-12-10T09:38:43.4355704+00:00" endTime="2024-12-10T09:38:43.4400964+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3e88a1c6-d787-4b1f-bcf5-846cefb0846c" />
+    <UnitTestResult executionId="03026512-ad77-41af-915b-743d0d045f8c" testId="d811ab55-1acb-6b01-6d61-6da7f19e30f3" testName="Write_Chunks_Should_Overwrite_Existing_File" computerName="fv-az1316-419" duration="00:00:00.0043473" startTime="2024-12-10T09:38:43.4408996+00:00" endTime="2024-12-10T09:38:43.4453406+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="03026512-ad77-41af-915b-743d0d045f8c" />
+    <UnitTestResult executionId="1b1ef4ac-caa0-4d19-ae6b-367ff2ba0067" testId="ee020bc4-4597-1b3e-4c0b-924828eea3cc" testName="Process_File_Should_Transfer_Data_From_Source_To_Destination" computerName="fv-az1316-419" duration="00:00:00.0293796" startTime="2024-12-10T09:38:43.4777641+00:00" endTime="2024-12-10T09:38:43.5072767+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1b1ef4ac-caa0-4d19-ae6b-367ff2ba0067" />
+    <UnitTestResult executionId="c7886e76-175b-4d63-a3f0-29e073c1f79e" testId="f3dab725-f160-0e29-f08b-aa9e9d8c3a9d" testName="Read_Chunks_Should_Handle_Empty_File" computerName="fv-az1316-419" duration="00:00:00.0056367" startTime="2024-12-10T09:38:43.4469379+00:00" endTime="2024-12-10T09:38:43.4527990+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c7886e76-175b-4d63-a3f0-29e073c1f79e" />
+    <UnitTestResult executionId="0cf39758-3ff6-4a89-bab8-baaf78819e12" testId="66e74aa2-9d45-dca2-9d47-bfa85690fb49" testName="Process_File_Should_Handle_Empty_Source_File" computerName="fv-az1316-419" duration="00:00:00.0039173" startTime="2024-12-10T09:38:43.5073191+00:00" endTime="2024-12-10T09:38:43.5113297+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0cf39758-3ff6-4a89-bab8-baaf78819e12" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="Process_File_Should_Handle_Empty_Source_File" storage="/home/runner/work/file_by_chunks/file_by_chunks/test/file_chunks.tests/bin/release/net9.0/file_chunks.tests.dll" id="66e74aa2-9d45-dca2-9d47-bfa85690fb49">
+      <Execution id="0cf39758-3ff6-4a89-bab8-baaf78819e12" />
+      <TestMethod codeBase="/home/runner/work/File_by_Chunks/File_by_Chunks/test/File_Chunks.Tests/bin/Release/net9.0/File_Chunks.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="procces_file_1.Tests.Procces_FilesTests" name="Process_File_Should_Handle_Empty_Source_File" />
+    </UnitTest>
+    <UnitTest name="Write_Chunks_Should_Write_Multiple_Chunks_Correctly" storage="/home/runner/work/file_by_chunks/file_by_chunks/test/file_chunks.tests/bin/release/net9.0/file_chunks.tests.dll" id="2cebd057-9b18-e54f-f7ef-6a2e098de61c">
+      <Execution id="476654c6-0898-47d2-90f1-f65c98c57384" />
+      <TestMethod codeBase="/home/runner/work/File_by_Chunks/File_by_Chunks/test/File_Chunks.Tests/bin/Release/net9.0/File_Chunks.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="Write_data_1.Tests.Write_DataTests" name="Write_Chunks_Should_Write_Multiple_Chunks_Correctly" />
+    </UnitTest>
+    <UnitTest name="Read_Chunks_Should_Handle_End_Of_File_Correctly" storage="/home/runner/work/file_by_chunks/file_by_chunks/test/file_chunks.tests/bin/release/net9.0/file_chunks.tests.dll" id="20647f18-0f09-76b3-5255-119971fae03c">
+      <Execution id="cf439ef1-4104-461c-9b60-6c28ce816953" />
+      <TestMethod codeBase="/home/runner/work/File_by_Chunks/File_by_Chunks/test/File_Chunks.Tests/bin/Release/net9.0/File_Chunks.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="Read_Data_1.Tests.Read_DataTests" name="Read_Chunks_Should_Handle_End_Of_File_Correctly" />
+    </UnitTest>
+    <UnitTest name="Read_Chunks_Should_Handle_Small_File" storage="/home/runner/work/file_by_chunks/file_by_chunks/test/file_chunks.tests/bin/release/net9.0/file_chunks.tests.dll" id="77d34c53-5989-3726-2bca-0fde86244c1c">
+      <Execution id="1519cc03-258e-4837-9f80-6a1fd58ba3f1" />
+      <TestMethod codeBase="/home/runner/work/File_by_Chunks/File_by_Chunks/test/File_Chunks.Tests/bin/Release/net9.0/File_Chunks.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="Read_Data_1.Tests.Read_DataTests" name="Read_Chunks_Should_Handle_Small_File" />
+    </UnitTest>
+    <UnitTest name="Write_Chunks_Should_Handle_Empty_Chunks_Gracefully" storage="/home/runner/work/file_by_chunks/file_by_chunks/test/file_chunks.tests/bin/release/net9.0/file_chunks.tests.dll" id="8315166a-d8ca-8d64-1571-3f4b4f86854b">
+      <Execution id="3e88a1c6-d787-4b1f-bcf5-846cefb0846c" />
+      <TestMethod codeBase="/home/runner/work/File_by_Chunks/File_by_Chunks/test/File_Chunks.Tests/bin/Release/net9.0/File_Chunks.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="Write_data_1.Tests.Write_DataTests" name="Write_Chunks_Should_Handle_Empty_Chunks_Gracefully" />
+    </UnitTest>
+    <UnitTest name="Process_File_Should_Transfer_Data_From_Source_To_Destination" storage="/home/runner/work/file_by_chunks/file_by_chunks/test/file_chunks.tests/bin/release/net9.0/file_chunks.tests.dll" id="ee020bc4-4597-1b3e-4c0b-924828eea3cc">
+      <Execution id="1b1ef4ac-caa0-4d19-ae6b-367ff2ba0067" />
+      <TestMethod codeBase="/home/runner/work/File_by_Chunks/File_by_Chunks/test/File_Chunks.Tests/bin/Release/net9.0/File_Chunks.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="procces_file_1.Tests.Procces_FilesTests" name="Process_File_Should_Transfer_Data_From_Source_To_Destination" />
+    </UnitTest>
+    <UnitTest name="Read_Chunks_Should_Handle_Empty_File" storage="/home/runner/work/file_by_chunks/file_by_chunks/test/file_chunks.tests/bin/release/net9.0/file_chunks.tests.dll" id="f3dab725-f160-0e29-f08b-aa9e9d8c3a9d">
+      <Execution id="c7886e76-175b-4d63-a3f0-29e073c1f79e" />
+      <TestMethod codeBase="/home/runner/work/File_by_Chunks/File_by_Chunks/test/File_Chunks.Tests/bin/Release/net9.0/File_Chunks.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="Read_Data_1.Tests.Read_DataTests" name="Read_Chunks_Should_Handle_Empty_File" />
+    </UnitTest>
+    <UnitTest name="Process_File_Should_Handle_Non_Existent_Source_File" storage="/home/runner/work/file_by_chunks/file_by_chunks/test/file_chunks.tests/bin/release/net9.0/file_chunks.tests.dll" id="a2e0f43a-c5c2-46bf-782c-a16a1c8947ca">
+      <Execution id="6fc978c3-d4b8-4240-b9d4-bb2dca5c05e3" />
+      <TestMethod codeBase="/home/runner/work/File_by_Chunks/File_by_Chunks/test/File_Chunks.Tests/bin/Release/net9.0/File_Chunks.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="procces_file_1.Tests.Procces_FilesTests" name="Process_File_Should_Handle_Non_Existent_Source_File" />
+    </UnitTest>
+    <UnitTest name="Write_Chunks_Should_Create_File_If_Not_Exist" storage="/home/runner/work/file_by_chunks/file_by_chunks/test/file_chunks.tests/bin/release/net9.0/file_chunks.tests.dll" id="beae3098-b911-2057-80cf-b17ca7a296ef">
+      <Execution id="23f06ba6-683d-434b-9b2f-8c109b5fa619" />
+      <TestMethod codeBase="/home/runner/work/File_by_Chunks/File_by_Chunks/test/File_Chunks.Tests/bin/Release/net9.0/File_Chunks.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="Write_data_1.Tests.Write_DataTests" name="Write_Chunks_Should_Create_File_If_Not_Exist" />
+    </UnitTest>
+    <UnitTest name="Write_Chunks_Should_Overwrite_Existing_File" storage="/home/runner/work/file_by_chunks/file_by_chunks/test/file_chunks.tests/bin/release/net9.0/file_chunks.tests.dll" id="d811ab55-1acb-6b01-6d61-6da7f19e30f3">
+      <Execution id="03026512-ad77-41af-915b-743d0d045f8c" />
+      <TestMethod codeBase="/home/runner/work/File_by_Chunks/File_by_Chunks/test/File_Chunks.Tests/bin/Release/net9.0/File_Chunks.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="Write_data_1.Tests.Write_DataTests" name="Write_Chunks_Should_Overwrite_Existing_File" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="a2e0f43a-c5c2-46bf-782c-a16a1c8947ca" executionId="6fc978c3-d4b8-4240-b9d4-bb2dca5c05e3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2cebd057-9b18-e54f-f7ef-6a2e098de61c" executionId="476654c6-0898-47d2-90f1-f65c98c57384" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="beae3098-b911-2057-80cf-b17ca7a296ef" executionId="23f06ba6-683d-434b-9b2f-8c109b5fa619" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="20647f18-0f09-76b3-5255-119971fae03c" executionId="cf439ef1-4104-461c-9b60-6c28ce816953" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="77d34c53-5989-3726-2bca-0fde86244c1c" executionId="1519cc03-258e-4837-9f80-6a1fd58ba3f1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8315166a-d8ca-8d64-1571-3f4b4f86854b" executionId="3e88a1c6-d787-4b1f-bcf5-846cefb0846c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d811ab55-1acb-6b01-6d61-6da7f19e30f3" executionId="03026512-ad77-41af-915b-743d0d045f8c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ee020bc4-4597-1b3e-4c0b-924828eea3cc" executionId="1b1ef4ac-caa0-4d19-ae6b-367ff2ba0067" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f3dab725-f160-0e29-f08b-aa9e9d8c3a9d" executionId="c7886e76-175b-4d63-a3f0-29e073c1f79e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="66e74aa2-9d45-dca2-9d47-bfa85690fb49" executionId="0cf39758-3ff6-4a89-bab8-baaf78819e12" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="10" executed="10" passed="10" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+</TestRun>
