@@ -28,4 +28,4 @@ jobs:
       run: dotnet build src/File_Chunks.sln --no-restore --configuration Release
 
     - name: Run tests
-      run: dotnet test test/File_Chunks.Tests --no-build --verbosity normal
+      run: dotnet test test/File_Chunks.Tests --configuration Release --verbosity normal
