@@ -22,10 +22,11 @@ jobs:
         dotnet-version: '7.0.x' # Adjust based on your .NET version
 
     - name: Restore dependencies
-      run: dotnet restore File_Chunks.sln
+      run: dotnet restore src/File_Chunks.sln
 
     - name: Build solution
-      run: dotnet build File_Chunks.sln --no-restore --configuration Release
+      run: dotnet build src/File_Chunks.sln --no-restore --configuration Release
 
     - name: Run tests
       run: dotnet test test/File_Chunks.Tests --no-build --verbosity normal
+
