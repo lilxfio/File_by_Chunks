@@ -39,4 +39,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: test-results
-        path: "test/File_Chunks.Tests/TestResult/*.trx" # Upload .trx files if any exist
+        path: "test/File_Chunks.Tests/TestResult/test-results.trx" # Upload .trx files if any exist
