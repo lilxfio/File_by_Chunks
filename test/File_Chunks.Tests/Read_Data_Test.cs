@@ -50,7 +50,7 @@ namespace Read_Data_1.Tests
             await foreach (var chunk in reader.ReadChunksAsync(emptyFilePath))
             {
                 Assert.IsTrue(chunk.Length > 0);  // Even empty file should yield a final chunk (empty string).
-                chunkCount--; // here is the ++ and not --
+                chunkCount ++; 
             }
 
             // Ensure that it completed and yielded a chunk
