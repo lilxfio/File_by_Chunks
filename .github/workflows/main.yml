@@ -1,4 +1,4 @@
-name: CI/CD Workflow for .NET
+name: .NET CI
 
 on:
   push:
@@ -9,51 +9,23 @@ on:
       - main
 
 jobs:
-  build-and-test:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout the repository
-      - name: Checkout code
-        uses: actions/checkout@v3
+    - name: Checkout code
+      uses: actions/checkout@v3
 
-      # Step 2: Setup .NET environment
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v3
-        with:
-          dotnet-version: '9.0'
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '7.0.x' # Adjust based on your .NET version
 
-      # Step 3: Restore dependencies
-      - name: Restore dependencies
-        run: dotnet restore ./src/File_Chunks.csproj
+    - name: Restore dependencies
+      run: dotnet restore File_Chunks.sln
 
-      # Step 4: Build the project
-      - name: Build the project
-        run: dotnet build ./src/File_Chunks.csproj --no-restore --configuration Release
+    - name: Build solution
+      run: dotnet build File_Chunks.sln --no-restore --configuration Release
 
-      # Step 5: Ensure TestResults Directory Exists
-      - name: Ensure TestResults Directory Exists
-        run: mkdir -p Test/File_Chunks.Tests/TestResults
-
-      # Step 6: Run tests and generate .trx results
-      - name: Run tests
-        run: |
-          dotnet test Test/File_Chunks.Tests/File_Chunks.Tests.csproj --no-build --configuration Release --logger "trx;LogFileName=test-results.trx" --results-directory Test/File_Chunks.Tests/TestResults
-      # Step 7: Debug Test Results Directory
-      - name: Debug Test Results Directory
-        run: |
-          echo "Checking for test results in Test/File_Chunks.Tests/TestResults/"
-          ls -R Test/File_Chunks.Tests/TestResults || echo "No test results found!"
-      # Step 8: Upload Build Artifacts
-      - name: Upload Build Artifacts
-        uses: actions/upload-artifact@v3
-        with:
-          name: build-artifacts
-          path: '**/bin/Release/**/*'
-
-      # Step 9: Upload Test Results
-      - name: Upload Test Results
-        uses: actions/upload-artifact@v3
-        with:
-          name: test-results
-          path: 'Test/File_Chunks.Tests/TestResults/*.trx'
+    - name: Run tests
+      run: dotnet test test/File_Chunks.Tests --no-build --verbosity normal
